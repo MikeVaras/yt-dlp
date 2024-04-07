@@ -20,12 +20,16 @@
 yt-dlp is a feature-rich command-line audio/video downloader with support for [thousands of sites](supportedsites.md). The project is a fork of [youtube-dl](https://github.com/ytdl-org/youtube-dl) based on the now inactive [youtube-dlc](https://github.com/blackjack4494/yt-dlc).
 
 <!-- MANPAGE: MOVE "USAGE AND OPTIONS" SECTION HERE -->
+<div>
 Simple EXAMPLE audio extractor:
 yt-dlp -x --audio-format mp3 https://www.youtube.com/watch?v
 
 Simple EXAMPLE Video:
 yt-dlp https://www.facebook.com/s
 yt-dlp https://www.tiktok.com/
+
+yt-dlp -f mp4 --external-downloader ffmpeg --external-downloader-args "-ss 00:10:00 -to 00:17:00" https://www.you
+</div>
 
 <!-- MANPAGE: BEGIN EXCLUDED SECTION -->
 * [INSTALLATION](#installation)
